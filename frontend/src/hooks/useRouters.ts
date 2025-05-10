@@ -1,9 +1,9 @@
 // src/hooks/useRouters.ts
 import { useEffect, useState } from 'react';
-import { RouterBase } from '../types';
+import { Router } from '../types';
 
 export function useRouters() {
-  const [routers, setRouters] = useState<RouterBase[]>([]);
+  const [routers, setRouters] = useState<Router[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
